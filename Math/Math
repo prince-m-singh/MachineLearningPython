@@ -1,0 +1,22 @@
+answer = 42
+radius_of_earth = 6.371e6
+# test number 43.0
+a = 3 * answer + 4
+b = radius_of_earth ** 2 + (a + 3) ** 0.5
+
+
+answer += 7
+
+c = 5 / 4
+d = 5 / 4
+e = 1.0 * 5 / 4
+print a, b, answer, c, d, e
+
+
+# Mathematics
+import math
+f = math.sqrt(4)
+g = radius_of_earth * math.sin(math.pi / 180.0 * 23.4)
+g = radius_of_earth * math.sin(math.pi
+                               / 180.0 * 23.4)
+print f, g
