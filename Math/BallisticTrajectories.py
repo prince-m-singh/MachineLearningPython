@@ -32,9 +32,9 @@ def trajectory():
         x[0,1]=0.
         v[0,0]=initial_speed*math.cos(angle_red)
         v[0,1]=initial_speed*math.sin(angle_red)
-        #for step in range(num_steps):
-         #   x[step+1]=x[step]+h*v[step]
-          #  v[step+1]=v[step]+h*acceleration
+        for step in range(num_steps):
+            x[step+1]=x[step]+h*v[step]
+            v[step+1]=v[step]+h*acceleration
         matplotlib.pyplot.plot(x[:, 0], x[:, 1])
     matplotlib.pyplot.axis('equal')
     axes = matplotlib.pyplot.gca()
